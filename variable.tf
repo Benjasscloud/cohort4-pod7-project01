@@ -52,7 +52,7 @@ variable "min_size" {
 variable "instance_types" {
   description = "Instance types for the EKS node group"
   type        = list(string)
-  default     = ["t3.micro"]
+  default     = ["t3.medium"]
 }
 
 variable "capacity_type" {
@@ -68,7 +68,7 @@ variable "eks_version" {
 variable "ami_type" {
   description = "AMI type for the EKS node group"
   type        = string
-  default     = "AL2_x86_64" # Use AL2_x86_64 for x86 instances, AL2_ARM_64 for ARM instances
+  default     = "AL2023_x86_64_STANDARD" # Use AL2023_x86_64_STANDARD for x86 instances, AL2_ARM_64 for ARM instances
 }
 
 variable "label_one" {
@@ -115,7 +115,7 @@ variable "namecheap_client_ip" {
 variable "db_instance_class" {
   description = "Instance class for the RDS database"
   type        = string
-  default     = "db.t3.micro"
+  default     = "db.t3.medium"
 }
 
 variable "db_allocated_storage" {
