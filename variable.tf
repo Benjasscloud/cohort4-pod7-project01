@@ -115,7 +115,7 @@ variable "namecheap_client_ip" {
 variable "db_instance_class" {
   description = "Instance class for the RDS database"
   type        = string
-  default     = "db.t2.medium"
+  default     = "db.t3.medium"
 }
 
 variable "db_allocated_storage" {
