@@ -52,7 +52,7 @@ variable "min_size" {
 variable "instance_types" {
   description = "Instance types for the EKS node group"
   type        = list(string)
-  default     = ["t3.medium"]
+  default     = ["t2.medium"]
 }
 
 variable "capacity_type" {
@@ -86,13 +86,13 @@ variable "zone_name" {
 variable "domain-name" {
   description = "Domain name to be created"
   type        = string
-  default     = "ceecloudtech.online"
+  default     = "cohort4pod7cloud.online"
 }
 
 variable "namecheap_api_user" {
   description = "Namecheap API user"
   type        = string
-  default     = "ceecloud"
+  default     = "benjass"
 }
 variable "namecheap_api_key" {
   description = "Namecheap API key"
@@ -102,12 +102,12 @@ variable "namecheap_api_key" {
 variable "namecheap_username" {
   description = "Namecheap username"
   type        = string
-  default     = "ceecloud"
+  default     = "benjass"
 }
 variable "namecheap_client_ip" {
   description = "Client IP for Namecheap API access"
   type        = string
-  default     = " 13.53.110.23 " # Replace with your actual client IP
+  default     = "3.90.27.237" # Replace with your actual client IP
 }
 
 #===========
@@ -115,7 +115,7 @@ variable "namecheap_client_ip" {
 variable "db_instance_class" {
   description = "Instance class for the RDS database"
   type        = string
-  default     = "db.t3.medium"
+  default     = "db.t2.medium"
 }
 
 variable "db_allocated_storage" {
@@ -164,5 +164,5 @@ variable "repository_name" {
 variable "email" {
   description = "Email address for notifications and certificates"
   type        = string
-  default     = "cynthiabedford23@gmailcom"
+  default     = "awsbenjass1@gmail.com"
 }

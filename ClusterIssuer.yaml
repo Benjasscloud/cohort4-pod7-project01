@@ -7,10 +7,10 @@ metadata:
 spec:
   acme:
     server: https://acme-v02.api.letsencrypt.org/directory
-    email: cynthiabedford23@gmailcom
+    email: awsbenjass1@gmail.com
     privateKeySecretRef:
       name: letsencrypt-prod-cluster-issuer
     solvers:
-    - http01:
-        ingress:
-          ingressClassName: external-nginx
+      - http01:
+          ingress:
+            ingressClassName: external-nginx

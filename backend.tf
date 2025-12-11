@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = "ceecloud-terraform-state"
-    key    = "ceecloud-terraform/prodution/terraform.tfstate"
-    region = "eu-north-1"
+    bucket = "benjass-terraform-state"
+    key    = "benjass-terraform/prodution/terraform.tfstate"
+    region = "us-east-1"
   }
 }
